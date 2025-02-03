@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "molecule_neural_tangent_example"
+version = "0.1.0"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "neural-tangents",
+    "jax[cuda12_local]",
+    "numpy",
+    "s2fft",
+    "plotly",
+    "tensorflow_datasets",
+    "pandas",
+    "kaleido",
+]
+authors = [
+    {name = "Philipp Misof"},
+    {name = "Pan Kessel"},
+    {name = "Jan Gerken"},
+]
+description = "Demo code how to apply neural tangent kernel methods to QM9"
+
+[project.urls]
+Research_preprint = "https://arxiv.org/abs/2406.06504"
